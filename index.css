@@ -1,0 +1,143 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+body {
+    font-family: 'Seven Segment', sans-serif;
+    background: #d8e9de;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Background {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    min-height: 400px;
+    border: 5px white solid;
+    background: #161f3f;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Box {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.Displaybox {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    background: #080100;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: #94a0bf;
+    font-family: 'Seven Segment', sans-serif;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #94a0bf 2px solid;
+    background: none;
+    font-size: 30px;
+    margin: 10px 5px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#AttackPower-EL {
+    color: red;
+    font-size: 100px;
+    line-height: 150px;
+}
+
+#Health-EL {
+    color: green;
+    font-size: 100px;
+    line-height: 150px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .Background {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .Box {
+        margin: 20px 0;
+    }
+    
+    .Displaybox {
+        max-width: 250px;
+        height: 180px;
+    }
+    
+    h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    #AttackPower-EL,
+    #Health-EL {
+        font-size: 120px;
+        line-height: 180px;
+    }
+    
+    button {
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Background {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    
+    .Displaybox {
+        max-width: 200px;
+        height: 150px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    #AttackPower-EL,
+    #Health-EL {
+        font-size: 100px;
+        line-height: 150px;
+    }
+    
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+        margin: 8px 4px;
+    }
+}
