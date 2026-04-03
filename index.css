@@ -1,0 +1,71 @@
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+body {
+    font-family: 'Seven Segment', sans-serif;
+    background: #d8e9de;
+    color: white;
+}
+
+.Background {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 50%;
+    border: 5px white solid;
+    background: #161f3f;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Box {
+    text-align: center;
+}
+
+
+.Displaybox {
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    background: #080100;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+button {
+    color: #94a0bf;
+    font-family: 'Seven Segment', sans-serif;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: #94a0bf 2px solid;
+    background: none;
+    font-size: 30px;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#AttackPower-EL {
+    color: red;
+    font-size: 100px;
+    line-height: 150px;
+
+
+}
+
+#Health-EL {
+    color: green;
+    font-size: 100px;
+    line-height: 150px;
+}

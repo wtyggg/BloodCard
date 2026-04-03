@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>血条计数器</title>
+</head>
+
+<body>
+    <div class="Background">
+        <div class="Box">
+            <h1>攻击力</h1>
+            <div class="Displaybox">
+                <p id="AttackPower-EL">0</p>
+            </div>
+            <button onclick="Atkaddone()">+1</button>
+            <button onclick="Atkaddfive()">+5</button>
+            <button onclick="Atkminusone()">-1</button>
+        </div>
+        <div class="Box">
+            <h1>血 量</h1>
+
+            <div class="Displaybox">
+                <p id="Health-EL">0</p>
+            </div>
+
+            <button onclick="HPaddone()">+1</button>
+            <button onclick="HPaddfive()">+5</button>
+            <button onclick="HPminusone()">-1</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
